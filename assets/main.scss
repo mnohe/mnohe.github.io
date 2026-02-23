@@ -1,0 +1,41 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Victor+Mono:wght@400;700&display=swap');
+@import "minima";
+
+/* Body text: serif */
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* Headings: monospace */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Victor Mono', monospace !important;
+    font-weight: 700;
+}
+
+pre,
+code,
+.site-title {
+    font-family: 'Victor Mono', monospace;
+}
+
+.post-list-heading {
+    display: none;
+}
+
+.post-link {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 100%;
+}
+
+.footer-col-3 p {
+    font-style: italic;
+}

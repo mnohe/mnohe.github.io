@@ -1,0 +1,13 @@
+{
+    "name": "GitHub Pages",
+    "image": "mcr.microsoft.com/devcontainers/ruby:3.2",
+    "forwardPorts": [4000],
+    "postCreateCommand": "gem install jekyll bundler && jekyll new . --force && bundle install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "asciidoctor.asciidoctor-vscode"
+            ]
+        }
+    }
+}

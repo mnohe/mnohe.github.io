@@ -1,0 +1,24 @@
+title: Human in the loop
+author: Someone who made a career out of explaining things to machines. Now the little buggers explain them back at me.
+description: |
+  Mostly about computers, occasionally other obsessions, always typed with
+  more enthusiasm than wisdom.
+# twitter_username: 0hex
+# email: blog@nohex.com
+linkedin_username: max.noe
+github_username:  mnohe
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+minima:
+  skin: auto
+  social_links:
+    - { platform: github, user_url: "https://github.com/yourname" }
+    - { platform: twitter, user_url: "https://twitter.com/yourname" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/yourname/" }
+    - { platform: email, user_url: "mailto:you@example.com" }
+header_pages:
+  - index.md
