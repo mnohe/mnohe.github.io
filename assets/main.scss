@@ -2,9 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@use "minima" with (
-    $brand-color: #2e7469
-);
+$brand-color: #2e7469;
+@import "minima";
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@400;700&display=swap');
 
 /* Body text: serif */
