@@ -2,29 +2,71 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400;1,700&family=Victor+Mono:wght@400;700&display=swap');
-@import "minima";
+@use "minima" with (
+    $brand-color: #2e7469
+);
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@400;700&display=swap');
 
 /* Body text: serif */
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lora', serif;
 }
 
-/* Headings: monospace */
+/* Headings: sans-serif */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Victor Mono', monospace !important;
+    font-family: 'Sora', sans-serif !important;
     font-weight: 700;
 }
 
 pre,
-code,
+code {
+    font-family: monospace;
+}
+
+.site-header {
+    border-top: 0;
+    border-bottom: 0;
+}
+
 .site-title {
-    font-family: 'Victor Mono', monospace;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+
+.site-title img {
+    display: block;
+}
+
+.site-title img {
+    height: 128px;
+    width: auto;
+    margin: 0.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+    .site-header {
+        min-height: 0;
+    }
+
+    .site-header .wrapper {
+        position: relative;
+    }
+
+    .site-title {
+        position: absolute;
+        top: 30px;
+        left: -120px;
+    }
+
+    .site-title img {
+        margin: 0;
+    }
 }
 
 .post-list-heading {
@@ -32,7 +74,7 @@ code,
 }
 
 .post-link {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lora', serif;
     font-size: 100%;
 }
 
