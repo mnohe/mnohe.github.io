@@ -11,6 +11,29 @@ body {
     font-family: 'Lora', serif;
 }
 
+/* Theme color variables to support light/dark mode */
+:root {
+    --site-bg: #ffffff;
+    --site-text: #111827;
+    --site-muted: #6b7280;
+    --site-brand: #{$brand-color};
+    --site-brand-hover: #{darken($brand-color, 10%)};
+}
+
+body {
+    background: var(--site-bg);
+    color: var(--site-text);
+}
+
+a {
+    color: var(--site-brand);
+}
+
+a:hover,
+a:focus {
+    color: var(--site-brand-hover);
+}
+
 /* Headings: sans-serif */
 h1,
 h2,
@@ -27,45 +50,8 @@ code {
     font-family: monospace;
 }
 
-.site-header {
-    border-top: 0;
-    border-bottom: 0;
-}
-
-.site-title {
-    display: inline-flex;
-    align-items: center;
-    line-height: 1;
-}
-
-.site-title img {
-    display: block;
-}
-
-.site-title img {
-    height: 128px;
-    width: auto;
-    margin: 0.5rem;
-}
 
 @media screen and (min-width: 1200px) {
-    .site-header {
-        min-height: 0;
-    }
-
-    .site-header .wrapper {
-        position: relative;
-    }
-
-    .site-title {
-        position: absolute;
-        top: 30px;
-        left: -120px;
-    }
-
-    .site-title img {
-        margin: 0;
-    }
 }
 
 .post-list-heading {
@@ -79,4 +65,53 @@ code {
 
 .footer-col-3 p {
     font-style: italic;
+}
+
+h3 .post-date {
+    font-weight: lighter;
+}
+
+/* Fade the latest post teaser so the last lines are barely visible */
+.post-featured .post-summary, .project-featured .project-summary {
+    max-height: 6rem; /* limit height to ~6 lines depending on font-size */
+    overflow: hidden;
+    position: relative;
+    -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
+    mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
+}
+
+/* Small overlay fallback for browsers without mask-image support */
+.post-featured .post-summary::after, .project-featured .project-summary::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4rem;
+    pointer-events: none;
+    background: linear-gradient(transparent, var(--site-bg));
+}
+
+/* If your site uses a non-white background, tweak the gradient end color above. */
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --site-bg: #0b1116;
+        --site-text: #e6eef1;
+        --site-muted: #9aa6ad;
+        --site-brand: #6fc1a6;
+        --site-brand-hover: #{darken(#6fc1a6, 10%)};
+    }
+
+    body {
+        background: var(--site-bg);
+        color: var(--site-text);
+    }
+
+    a { color: var(--site-brand); }
+
+    .post-featured .post-summary::after {
+        background: linear-gradient(transparent, var(--site-bg));
+    }
 }

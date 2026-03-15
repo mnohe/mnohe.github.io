@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<main class="projects">
+  <h2>Projects</h2>
+  <section class="projects-list">
+    {% if site.projects.size > 0 %}
+    {% for project in site.projects %}
+    <p>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      —
+      <span class="project-summary">
+        {{ project.summary }}
+      </span>
+    </p>
+    {% endfor %}
+    {% else %}
+    <p>No projects at the moment.</p>
+    {% endif %}
+  </section>
+</main>
