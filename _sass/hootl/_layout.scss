@@ -24,6 +24,10 @@
   &:visited {
     color: $grey-color-dark;
   }
+
+  h1 {
+    display: none;
+  }
 }
 
 .site-nav {

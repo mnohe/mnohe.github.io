@@ -5,7 +5,7 @@
     {%- assign page_paths = site.header_pages | default: default_paths -%}
 
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}" aria-label="{{ site.title | escape }}">
-      <h1>Human out of the loop</h1>
+      <h1>{{ site.title | escape }}</h1>
       <picture>
         <source media="(prefers-color-scheme: dark) and (max-width: 720px)" srcset="{{ "/assets/hootl-wordmark-vertical-dark.svg" | relative_url }}">
         <source media="(max-width: 720px)" srcset="{{ "/assets/hootl-wordmark-vertical-light.svg" | relative_url }}">
