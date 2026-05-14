@@ -7,11 +7,11 @@ linkedin_username: max.noe
 github_username:  mnohe
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
-minima:
+hootl:
   skin: auto
   social_links:
     - { platform: github, user_url: "https://github.com/mnohe" }

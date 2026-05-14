@@ -2,8 +2,12 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@use "sass:color";
+
 $brand-color: #2e7469;
-@import "minima";
+@use "hootl" with (
+    $brand-color: $brand-color
+);
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Sora:wght@400;700&display=swap');
 
 /* Body text: serif */
@@ -17,7 +21,7 @@ body {
     --site-text: #111827;
     --site-muted: #6b7280;
     --site-brand: #{$brand-color};
-    --site-brand-hover: #{darken($brand-color, 10%)};
+    --site-brand-hover: #{color.adjust($brand-color, $lightness: -10%)};
 }
 
 body {
@@ -101,7 +105,7 @@ h3 .post-date {
         --site-text: #e6eef1;
         --site-muted: #9aa6ad;
         --site-brand: #6fc1a6;
-        --site-brand-hover: #{darken(#6fc1a6, 10%)};
+        --site-brand-hover: #{color.adjust(#6fc1a6, $lightness: -10%)};
     }
 
     body {
