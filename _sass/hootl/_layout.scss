@@ -4,12 +4,14 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+}
+
+header .wrapper {
+  border-bottom: .3em solid $brand-color;
 }
 
 .site-title {
@@ -19,6 +21,7 @@
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
+  padding-top: 1em;
 
   &,
   &:visited {
@@ -112,7 +115,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
+  border-top: 1px solid $grey-color-dark;
   padding: $spacing-unit 0;
 }
 

@@ -71,21 +71,59 @@ code {
     font-style: italic;
 }
 
-h3 .post-date {
+.home {
+    .post, .project {
+        margin-bottom: .5em;
+    }
+}
+
+.post-date {
     font-weight: lighter;
+    font-size: 80%;
+}
+
+.home > h2 {
+    display: none;
+}
+
+.entry-label {
+    border: 1px solid color.adjust($brand-color, $lightness: -18%);
+    border-radius: 999px;
+    color: color.adjust($brand-color, $lightness: -35%);
+    display: inline-block;
+    font-size: 0.66rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    line-height: 1;
+    padding: 0.22rem 0.48rem;
+    margin-left: 0.25rem;
+    vertical-align: 0.18em;
+    text-transform: uppercase;
+}
+
+.post-featured > h3,
+.project-featured > h3 {
+    margin-bottom: 0.25rem;
+}
+
+.teaser {
+    max-height: 4.8rem;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 1em;
 }
 
 /* Fade the latest post teaser so the last lines are barely visible */
 .post-featured .post-summary, .project-featured .project-summary {
-    max-height: 6rem; /* limit height to ~6 lines depending on font-size */
-    overflow: hidden;
+    font-size: 0.8rem;
+    min-height: 4.8rem;
+    padding-right: 4rem;
     position: relative;
     -webkit-mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
     mask-image: linear-gradient(180deg, #000 60%, transparent 100%);
 }
 
-/* Small overlay fallback for browsers without mask-image support */
-.post-featured .post-summary::after, .project-featured .project-summary::after {
+.teaser::after {
     content: "";
     position: absolute;
     left: 0;
@@ -94,9 +132,49 @@ h3 .post-date {
     height: 4rem;
     pointer-events: none;
     background: linear-gradient(transparent, var(--site-bg));
+    z-index: 1;
 }
 
-/* If your site uses a non-white background, tweak the gradient end color above. */
+.teaser-actions {
+    align-items: flex-end;
+    background: color-mix(in srgb, var(--site-bg) 82%, transparent);
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.12rem;
+    line-height: 1.25;
+    margin-top: 1em;
+    padding-left: 1rem;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    z-index: 2;
+}
+
+.teaser-actions a {
+    color: var(--site-brand);
+    display: block;
+}
+
+.teaser-actions .see-all {
+    font-size: 0.7rem;
+}
+
+.teaser-actions a:hover,
+.teaser-actions a:focus {
+    color: #ffffff;
+}
+
+.posts-list ul {
+    list-style: none;
+}
+
+.projects .projects-list h3 {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
 
 /* Dark mode overrides */
 @media (prefers-color-scheme: dark) {
@@ -115,7 +193,12 @@ h3 .post-date {
 
     a { color: var(--site-brand); }
 
-    .post-featured .post-summary::after {
+    .entry-label {
+        border-color: color.adjust(#0b1116, $lightness: 20%);
+        color: color.adjust(#0b1116, $lightness: 38%);
+    }
+
+    .teaser::after {
         background: linear-gradient(transparent, var(--site-bg));
     }
 }

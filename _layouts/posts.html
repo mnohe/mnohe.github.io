@@ -3,37 +3,19 @@ layout: default
 ---
 
 <main class="posts">
-  <section class="latest-post">
-    {% assign latest = site.posts.first %}
-    {% if latest %}
-    <article class="post post-featured">
-        <h3>
-            <span class="post-date">{{ latest.date | date: "%B %-d, %Y" }}</span>
-            —
-            <a href="{{ latest.url | relative_url }}">{{ latest.title }}</a>
-        </h3>
-
-        <div class="post-summary">
-          {% assign first_para = latest.content | split: '</p>' | first %}
-          {{ first_para | append: '</p>' }}
-        </div>
-
-        <p class="read-more"><a href="{{ latest.url | relative_url }}">Read more...</a></p>
-      </article>
-    {% endif %}
-    </section>
 
     <section class="posts-list">
-    {% if site.posts.size > 1 %}
-      <h2>Older posts</h2>
+    {% if site.posts.size > 0 %}
       <ul class="post-list-compact">
-        {% for post in site.posts offset:1 %}
+        {% for post in site.posts %}
           <li class="post-compact">
             <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
             <span class="post-date"> — {{ post.date | date: "%B %-d, %Y" }}</span>
           </li>
         {% endfor %}
       </ul>
+    {% else %}
+    There are no posts.
     {% endif %}
   </section>
 </main>

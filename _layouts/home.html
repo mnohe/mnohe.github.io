@@ -3,57 +3,57 @@ layout: default
 ---
 
 <main class="home">
+  <h2>Latest</h2>
 
   <section class="latest-post">
-    <h2>Latest post</h2>
     {% assign latest = site.posts.first %}
     {% if latest %}
     <article class="post post-featured">
       <h3>
-        <span class="post-date">{{ latest.date | date: "%B %-d, %Y" }}</span>
-        —
         <a href="{{ latest.url | relative_url }}">{{ latest.title }}</a>
+        <span class="entry-label">Post</span>
+        <span class="entry-label">Latest</span>
       </h3>
-
-      <div class="post-summary">
-        {% assign first_para = latest.content | split: '</p>' | first %}
-        {{ first_para | append: '</p>' }}
+      
+      <div class="teaser">
+        <div class="post-summary">
+          {% assign first_para = latest.content | split: '</p>' | first %}
+          {{ first_para | append: '</p>' }}
+        </div>
+        <div class="teaser-actions">
+          <a class="read-more" href="{{ latest.url | relative_url }}">Read more...</a>
+          {% if site.posts.size > 1 %}
+          <a class="see-all" href="{{ '/posts/' | relative_url }}">Other posts</a>
+          {% endif %}
+        </div>
       </div>
-
-      <p>
-        <span class="read-more"><a href="{{ latest.url | relative_url }}">Read more...</a></span>
-        —
-        {% if site.posts.size > 1 %}
-        <span class="see-all"><a href="{{ '/posts/' | relative_url }}">All posts</a></span>
-        {% endif %}
-      </p>
-
+      
     </article>
     {% endif %}
   </section>
-
+  
   <section class="latest-project">
-    <h2>Latest project</h2>
     {% assign latest_project = site.projects.last %}
     {% if latest_project %}
     <article class="project project-featured">
       <h3>
         <a href="{{ latest_project.url | relative_url }}">{{ latest_project.title }}</a>
+        <span class="entry-label">Project</span>
+        <span class="entry-label">Latest</span>
       </h3>
 
-      <div class="project-summary">
-        {% assign first_para = latest_project.content | split: '</p>' | first %}
-        {{ first_para | append: '</p>' }}
+      <div class="teaser">
+        <div class="project-summary">
+          {% assign first_para = latest_project.content | split: '</p>' | first %}
+          {{ first_para | append: '</p>' }}
+        </div>
+        <div class="teaser-actions">
+          <a class="read-more" href="{{ latest_project.url | relative_url }}">Read more...</a>
+          {% if site.projects.size > 1 %}
+          <a class="see-all" href="{{ '/projects/' | relative_url }}">Other projects</a>
+          {% endif %}
+        </div>
       </div>
-
-      
-      <p>
-        <span class="read-more"><a href="{{ latest_project.url | relative_url }}">Read more...</a></span>
-        —
-        {% if site.projects.size > 1 %}
-        <span class="see-all"><a href="{{ '/projects/' | relative_url }}">All projects</a></span>
-        {% endif %}
-      </p>
     </article>
     {% endif %}
   </section>
