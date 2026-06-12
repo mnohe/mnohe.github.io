@@ -20,9 +20,9 @@ hootl:
 header_pages:
   - index.md
   - posts.md
-  - projects.md
+  - portfolio.md
 
 collections:
-  projects:
+  portfolio:
     output: true
-    permalink: /projects/:title/
+    permalink: /portfolio/:title/

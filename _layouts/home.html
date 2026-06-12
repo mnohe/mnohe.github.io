@@ -33,12 +33,12 @@ layout: default
   </section>
   
   <section class="latest-project">
-    {% assign latest_project = site.projects.last %}
+    {% assign latest_project = site.portfolio.last %}
     {% if latest_project %}
     <article class="project project-featured">
       <h3>
         <a href="{{ latest_project.url | relative_url }}">{{ latest_project.title }}</a>
-        <span class="entry-label">Project</span>
+        <span class="entry-label">Portfolio</span>
         <span class="entry-label">Latest</span>
       </h3>
 
@@ -49,8 +49,8 @@ layout: default
         </div>
         <div class="teaser-actions">
           <a class="read-more" href="{{ latest_project.url | relative_url }}">Read more...</a>
-          {% if site.projects.size > 1 %}
-          <a class="see-all" href="{{ '/projects/' | relative_url }}">Other projects</a>
+          {% if site.portfolio.size > 1 %}
+          <a class="see-all" href="{{ '/portfolio/' | relative_url }}">More portfolio</a>
           {% endif %}
         </div>
       </div>

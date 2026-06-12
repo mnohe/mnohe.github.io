@@ -2,11 +2,11 @@
 layout: default
 ---
 
-<main class="projects">
-  <h2>Projects</h2>
-  <section class="projects-list">
-    {% if site.projects.size > 0 %}
-    {% for project in site.projects %}
+<main class="portfolio">
+  <h2>Portfolio</h2>
+  <section class="portfolio-list">
+    {% if site.portfolio.size > 0 %}
+    {% for project in site.portfolio %}
     <h3>
       <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
     </h3>
