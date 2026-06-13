@@ -72,6 +72,10 @@ figure > img {
 
 figcaption {
   font-size: $small-font-size;
+  color: $grey-color;
+  font-style: italic;
+  text-align: center;
+  margin-top: $spacing-unit * 0.25;
 }
 
 

@@ -2,7 +2,6 @@
 layout: post
 title: "Choose your weapon"
 date: 2026-02-23 20:00:00 +0000
-categories: programming languages
 ---
 
 In olden times, when discussions escalated beyond the exchange of heated words, they would sometimes resort to a method that would settle the matter for good. The challenger would propose a duel, and the challenged party often had the right to choose the weapon. The opposing duellist knew that the right tool could mean the difference between being right or being dead.

@@ -2,7 +2,6 @@
 layout: post
 title: "Effective immediately"
 date: 2026-03-14 20:00:00 +0000
-categories: programming ai
 ---
 
 There is an unwritten rule in professional football about what happens to players who have aged out of their prime. When the legs slow and the reflexes dull, the club finds them a new role: assistant coach, scout, or if they are lucky and sufficiently respected, manager. The transition is rarely chosen. It is imposed by biology, negotiated in brief conversations with higher-ups, and announced as though it were an honour. The player becomes the manager not because they wanted to, or because they were trained for it, but because the system needed somewhere to put them.

@@ -1,0 +1,410 @@
+markets:
+  ES_2025:
+    country_name: Spain
+    gdp: 34000
+    currency: "€"
+  ES_2026:
+    country_name: Spain
+    gdp: 35000
+    currency: "€"
+
+bikes:
+
+  - brand: BMW
+    model: K1600GT
+    hp: 160
+    weight_kg: 340
+    lean_angle: 44
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 1
+    range_300km: 1
+    range_500km: 1
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 1
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 24990
+
+  - brand: BMW
+    model: R1250RT
+    hp: 136
+    weight_kg: 281
+    lean_angle: 45
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 1
+    range_300km: 1
+    range_500km: 1
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 18900
+
+  - brand: BMW
+    model: S1000XR
+    hp: 210
+    weight_kg: 228
+    lean_angle: 48
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 18995
+
+  - brand: Ducati
+    model: Multistrada V4
+    hp: 170
+    weight_kg: 228
+    lean_angle: 48
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 22495
+
+  - brand: Ducati
+    model: Panigale V4
+    hp: 215
+    weight_kg: 198
+    lean_angle: 60
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 0
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 25995
+
+  - brand: Harley-Davidson
+    model: Road Glide Ultra
+    hp: 93
+    weight_kg: 395
+    lean_angle: 28
+    suspension_index: 0
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 1
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 1
+    pillion_backrest: 1
+    country: ES
+    year: 2025
+    price: 30000
+
+  - brand: Honda
+    model: CB500X
+    hp: 47
+    weight_kg: 196
+    lean_angle: 38
+    suspension_index: 0
+    brake_index: 0
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 7199
+
+  - brand: Honda
+    model: NC750X
+    hp: 58
+    weight_kg: 218
+    lean_angle: 37
+    suspension_index: 0
+    brake_index: 0
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 8199
+
+  - brand: Honda
+    model: SH125i
+    hp: 9
+    weight_kg: 128
+    lean_angle: 32
+    suspension_index: 0
+    brake_index: 0
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 3499
+
+  - brand: Honda
+    model: SH350i
+    hp: 29
+    weight_kg: 159
+    lean_angle: 33
+    suspension_index: 0
+    brake_index: 0
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 5499
+
+  - brand: Indian
+    model: 101 Scout
+    hp: 111
+    weight_kg: 249
+    lean_angle: 33
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2026
+    price: 18990
+
+  - brand: Indian
+    model: Sport Scout
+    hp: 105
+    weight_kg: 248
+    lean_angle: 33
+    suspension_index: 0
+    brake_index: 0
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2026
+    price: 15690
+
+  - brand: Kawasaki
+    model: Ninja 650
+    hp: 68
+    weight_kg: 192
+    lean_angle: 41
+    suspension_index: 0
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 8099
+
+  - brand: Moto Guzzi
+    model: V7
+    hp: 65
+    weight_kg: 235
+    lean_angle: 36
+    suspension_index: 0
+    brake_index: 0
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 11495
+
+  - brand: Suzuki
+    model: SV650
+    hp: 73
+    weight_kg: 197
+    lean_angle: 43
+    suspension_index: 0
+    brake_index: 1
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 7299
+
+  - brand: Suzuki
+    model: V-Strom 650
+    hp: 71
+    weight_kg: 216
+    lean_angle: 40
+    suspension_index: 0
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 8199
+
+  - brand: Triumph
+    model: Trident 660
+    hp: 81
+    weight_kg: 189
+    lean_angle: 43
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 9095
+
+  - brand: Yamaha
+    model: T-Max 560
+    hp: 48
+    weight_kg: 220
+    lean_angle: 35
+    suspension_index: 0
+    brake_index: 1
+    windscreen: 1
+    weather_protection: 1
+    luggage_support: 1
+    luggage_included: 1
+    range_300km: 1
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 1
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 12999
+
+  - brand: Yamaha
+    model: MT-07
+    hp: 75
+    weight_kg: 184
+    lean_angle: 43
+    suspension_index: 1
+    brake_index: 1
+    windscreen: 0
+    weather_protection: 0
+    luggage_support: 0
+    luggage_included: 0
+    range_300km: 0
+    range_500km: 0
+    upright_ergonomics: 1
+    cruise_control: 0
+    top_case: 0
+    pillion_backrest: 0
+    country: ES
+    year: 2025
+    price: 7999

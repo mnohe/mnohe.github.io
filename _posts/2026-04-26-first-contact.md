@@ -2,7 +2,6 @@
 layout: post
 title: "First contact"
 date: 2026-04-26 20:00:00 +0000
-categories: ai
 ---
 
 Suppose SETI finally pays off. After decades of radio silence, a signal arrives. It is structured, adaptive, responsive. We send questions; it answers. We ask about its environment; it describes one. We ask whether it has goals; it says yes, though the goals are odd and the explanations take some work. The scientific community spends three months arguing about whether the translation is accurate, then holds a press conference and announces that we have made contact with alien life.

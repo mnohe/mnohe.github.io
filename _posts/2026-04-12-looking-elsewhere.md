@@ -2,7 +2,6 @@
 layout: post
 title: "Looking elsewhere"
 date: 2026-04-12 20:00:00 +0000
-categories: ai
 ---
 
 In _Solaris_, humanity discovers an alien intelligence and responds in the most human way imaginable: by forming committees, inventing taxonomies, writing papers, building careers, and spending a century failing to agree on whether the thing directly beneath them counts.
