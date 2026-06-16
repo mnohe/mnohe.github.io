@@ -32,16 +32,12 @@ permalink: /motorcycles/cap-data/
     {% assign sorted_bikes = site.data.cap_bikes.bikes | sort: 'brand' %}
     {% for bike in sorted_bikes %}
 
-    {% assign comfort_pts = bike.windscreen
-      | plus: bike.weather_protection
-      | plus: bike.luggage_support
-      | plus: bike.luggage_included
-      | plus: bike.range_300km
-      | plus: bike.range_500km
+    {% assign wind = bike.windscreen | plus: bike.weather_protection | at_most: 1 %}
+    {% assign comfort_pts = wind
       | plus: bike.upright_ergonomics
-      | plus: bike.cruise_control
-      | plus: bike.top_case
-      | plus: bike.pillion_backrest %}
+      | plus: bike.range_300km
+      | plus: bike.luggage_support
+      | plus: bike.cruise_control %}
     {% assign c = comfort_pts | times: 1.0 | divided_by: 5 %}
 
     {% if bike.suspension_index == 1 and bike.brake_index == 1 %}
@@ -52,10 +48,11 @@ permalink: /motorcycles/cap-data/
       {% assign mfull = 0.5 %}
     {% endif %}
 
-    {% assign hw    = bike.hp | times: 1.0 | divided_by: bike.weight_kg %}
+    {% assign m_total = bike.weight_kg | plus: 80 %}
+    {% assign base_pw = bike.hp | times: 1000.0 | divided_by: m_total | divided_by: 260 %}
     {% assign lmod  = bike.lean_angle | times: 1.0 | divided_by: 43 %}
     {% assign lmod2 = lmod | times: lmod %}
-    {% assign base  = hw | times: 1000 | times: lmod2 | divided_by: 408 %}
+    {% assign base  = base_pw | times: lmod2 %}
     {% assign p = base | times: mfull %}
 
     {% assign mkey     = bike.country | append: '_' | append: bike.year %}
@@ -65,22 +62,17 @@ permalink: /motorcycles/cap-data/
     {% assign a = threshold | divided_by: bike.price %}
 
     {% capture c_tooltip %}C = {{ comfort_pts }} / 5 = {{ c | round: 2 }}{% endcapture %}
-    {% capture p_tooltip %}P = ({{ bike.hp }}/{{ bike.weight_kg }} × 1000 × ({{ bike.lean_angle }}/43)²) / 408 × {{ mfull }} = {{ p | round: 2 }}{% endcapture %}
+    {% capture p_tooltip %}P = {{ bike.hp }}/(({{ bike.weight_kg }}+80)×0.26) × ({{ bike.lean_angle }}/43)² × {{ mfull }} = {{ p | round: 2 }}{% endcapture %}
     {% capture a_tooltip %}A = (0.25 × {{ bike_gdp }}) / {{ bike.price }} = {{ a | round: 2 }} ({{ market.country_name }}, {{ bike.year }}){% endcapture %}
 
     <tr>
       <td>{{ bike.brand }} {{ bike.model }}</td>
       <td><span class="ctip">{{ comfort_pts }}<span class="ctip-box"><ul>
-        <li{% if bike.windscreen == 0 %} class="ctip-no"{% endif %}>windscreen</li>
-        <li{% if bike.weather_protection == 0 %} class="ctip-no"{% endif %}>weather protection</li>
-        <li{% if bike.luggage_support == 0 %} class="ctip-no"{% endif %}>luggage support</li>
-        <li{% if bike.luggage_included == 0 %} class="ctip-no"{% endif %}>luggage included</li>
+        <li{% if wind == 0 %} class="ctip-no"{% endif %}>wind &amp; weather protection</li>
+        <li{% if bike.upright_ergonomics == 0 %} class="ctip-no"{% endif %}>long-distance ergonomics</li>
         <li{% if bike.range_300km == 0 %} class="ctip-no"{% endif %}>300 km range</li>
-        <li{% if bike.range_500km == 0 %} class="ctip-no"{% endif %}>500 km range</li>
-        <li{% if bike.upright_ergonomics == 0 %} class="ctip-no"{% endif %}>upright ergonomics</li>
+        <li{% if bike.luggage_support == 0 %} class="ctip-no"{% endif %}>pannier option</li>
         <li{% if bike.cruise_control == 0 %} class="ctip-no"{% endif %}>cruise control</li>
-        <li{% if bike.top_case == 0 %} class="ctip-no"{% endif %}>top case</li>
-        <li{% if bike.pillion_backrest == 0 %} class="ctip-no"{% endif %}>pillion backrest</li>
       </ul></span></span></td>
       <td class="{% if c >= 1 %}idx-pass{% else %}idx-fail{% endif %}" title="{{ c_tooltip }}">{{ c | round: 2 }}</td>
       <td>{{ market.currency }}{{ bike.price }}</td>

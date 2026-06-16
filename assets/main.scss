@@ -237,25 +237,9 @@ table {
     aside.admonition {
         float: right;
         clear: right;
-        width: 36%;
-        margin: 0.25em 0 1em 1.5em;
-    }
-}
-
-/* Discreet appendix link at the foot of a post */
-.cap-appendix {
-    font-size: 0.82rem;
-    color: var(--site-muted);
-    text-align: right;
-    margin-top: 0.25em;
-
-    a, a:visited {
-        color: var(--site-muted);
-        text-decoration: none;
-    }
-
-    a:hover, a:focus {
-        color: var(--site-brand);
+        width: 40%;
+        margin: 0.25em -5em 1em 1.5em;
+        font-size: 80%;
     }
 }
 
@@ -335,4 +319,14 @@ table {
     .teaser::after {
         background: linear-gradient(transparent, var(--site-bg));
     }
+
+    pre, code {
+        background-color: #131d27;
+        border-color: var(--table-border);
+        color: var(--site-text);
+    }
+}
+
+hr {
+    margin: 4em 6em;
 }

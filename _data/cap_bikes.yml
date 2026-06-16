@@ -20,13 +20,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 1
     range_300km: 1
-    range_500km: 1
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 1
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 24990
@@ -41,13 +37,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 1
     range_300km: 1
-    range_500km: 1
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 18900
@@ -62,13 +54,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 18995
@@ -83,13 +71,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 22495
@@ -104,13 +88,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 0
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 25995
@@ -125,13 +105,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 1
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 1
-    pillion_backrest: 1
     country: ES
     year: 2025
     price: 30000
@@ -146,13 +122,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 7199
@@ -167,13 +139,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 8199
@@ -188,13 +156,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 3499
@@ -209,13 +173,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 5499
@@ -230,13 +190,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2026
     price: 18990
@@ -251,13 +207,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2026
     price: 15690
@@ -272,13 +224,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 8099
@@ -293,13 +241,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 11495
@@ -314,13 +258,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 7299
@@ -335,13 +275,9 @@ bikes:
     windscreen: 1
     weather_protection: 1
     luggage_support: 1
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 8199
@@ -356,13 +292,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 9095
@@ -376,14 +308,10 @@ bikes:
     brake_index: 1
     windscreen: 1
     weather_protection: 1
-    luggage_support: 1
-    luggage_included: 1
+    luggage_support: 0
     range_300km: 1
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 1
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 12999
@@ -398,13 +326,9 @@ bikes:
     windscreen: 0
     weather_protection: 0
     luggage_support: 0
-    luggage_included: 0
     range_300km: 0
-    range_500km: 0
     upright_ergonomics: 1
     cruise_control: 0
-    top_case: 0
-    pillion_backrest: 0
     country: ES
     year: 2025
     price: 7999
