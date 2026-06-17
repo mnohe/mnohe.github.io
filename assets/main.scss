@@ -80,8 +80,10 @@ code {
 }
 
 .nav-social-label {
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: var(--site-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
 }
 
 .home .project {
