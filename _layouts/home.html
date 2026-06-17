@@ -3,58 +3,20 @@ layout: default
 ---
 
 <main class="home">
-  <h2>Latest</h2>
-
-  <section class="latest-post">
-    {% assign latest = site.posts.first %}
-    {% if latest %}
-    <article class="post post-featured">
+  <section class="portfolio-list">
+    {% assign sorted_portfolio = site.portfolio | sort: 'title' %}
+    {% if sorted_portfolio.size > 0 %}
+    {% for project in sorted_portfolio %}
+    <article class="project">
       <h3>
-        <a href="{{ latest.url | relative_url }}">{{ latest.title }}</a>
-        <span class="entry-label">Post</span>
-        <span class="entry-label">Latest</span>
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
       </h3>
-      
-      <div class="teaser">
-        <div class="post-summary">
-          {% assign first_para = latest.content | split: '</p>' | first %}
-          {{ first_para | append: '</p>' }}
-        </div>
-        <div class="teaser-actions">
-          <a class="read-more" href="{{ latest.url | relative_url }}">Read more...</a>
-          {% if site.posts.size > 1 %}
-          <a class="see-all" href="{{ '/posts/' | relative_url }}">Other posts</a>
-          {% endif %}
-        </div>
-      </div>
-      
+      <p class="project-summary">{{ project.summary }}</p>
     </article>
-    {% endif %}
-  </section>
-  
-  <section class="latest-project">
-    {% assign latest_project = site.portfolio.last %}
-    {% if latest_project %}
-    <article class="project project-featured">
-      <h3>
-        <a href="{{ latest_project.url | relative_url }}">{{ latest_project.title }}</a>
-        <span class="entry-label">Portfolio</span>
-        <span class="entry-label">Latest</span>
-      </h3>
+    {% endfor %}
+    {% else %}
 
-      <div class="teaser">
-        <div class="project-summary">
-          {% assign first_para = latest_project.content | split: '</p>' | first %}
-          {{ first_para | append: '</p>' }}
-        </div>
-        <div class="teaser-actions">
-          <a class="read-more" href="{{ latest_project.url | relative_url }}">Read more...</a>
-          {% if site.portfolio.size > 1 %}
-          <a class="see-all" href="{{ '/portfolio/' | relative_url }}">More portfolio</a>
-          {% endif %}
-        </div>
-      </div>
-    </article>
+    <p>No projects yet.</p>
     {% endif %}
   </section>
 </main>
