@@ -1,9 +1,16 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      Max's <em>portfolio</em>
-    </a>
+    <div class="site-brand">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}" aria-label="Max's portfolio">
+        {% include logo.svg %}
+      </a>
+      <div class="site-tags">
+        <p class="site-tag">Layer of bits</p>
+        <p class="site-tag">Plumber of clouds</p>
+        <p class="site-tag">Shepherd of agents</p>
+      </div>
+    </div>
 
     <nav class="site-nav" aria-label="Find me on">
       <span class="nav-social-label">Find me on</span>

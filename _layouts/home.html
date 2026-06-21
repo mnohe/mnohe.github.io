@@ -3,6 +3,10 @@ layout: default
 ---
 
 <main class="home">
+  <section class="profile-hero">
+    <p class="profile-bio">AI-assisted products with explicit schemas, validation, and human-controlled workflows, grounded in experience across distributed systems, platform automation, and security-critical software.</p>
+  </section>
+
   <section class="portfolio-list">
     {% assign sorted_portfolio = site.portfolio | sort: 'title' %}
     {% if sorted_portfolio.size > 0 %}
